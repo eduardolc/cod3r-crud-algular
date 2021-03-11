@@ -16,9 +16,14 @@
       "price": "9999"
     },
     {
-      "name": "Lapis",
-      "price": "777777",
+      "name": "Copo",
+      "price": 1000000,
       "id": 4
+    },
+    {
+      "name": "Papel",
+      "price": 54444,
+      "id": 5
     }
   ]
 }
