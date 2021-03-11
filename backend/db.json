@@ -8,16 +8,16 @@
     {
       "id": 2,
       "name": "Caderno",
-      "price": 6.99
+      "price": "10000"
     },
     {
       "id": 3,
       "name": "Bolsa",
-      "price": 49.99
+      "price": "9999"
     },
     {
       "name": "Lapis",
-      "price": 12,
+      "price": "777777",
       "id": 4
     }
   ]
