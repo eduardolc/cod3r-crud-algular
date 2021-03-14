@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderData } from '../../tamplate/header/header-data.model';
+import { HeaderService } from '../../tamplate/header/header.service';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
@@ -15,8 +17,11 @@ export class ProductUpdateComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private route: ActivatedRoute,
+    private headerService: HeaderService
+  ) {
+    this.headerService.headerData = new HeaderData('Atualizar Produto', 'storefront', 'products/update');
+   }
 
   ngOnInit(): void {
     this.product = new Product();
